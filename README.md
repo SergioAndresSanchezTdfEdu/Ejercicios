@@ -1,2 +1,2 @@
-# Ejercicios-CodeSandbox
+# Ejercicios
 Created with CodeSandbox
