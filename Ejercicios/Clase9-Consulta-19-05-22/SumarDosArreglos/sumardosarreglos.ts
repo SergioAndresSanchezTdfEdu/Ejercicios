@@ -29,7 +29,7 @@ function SumarArreglo(
   tamanio: number
 ): number[] {
   let SumaArreglos: number[] = new Array(tamanio);
-  for (let i: number = 0; i < 6; i++) {
+  for (let i: number = 0; i < tamanio; i++) {
     SumaArreglos[i] = arreglo1[i] + arreglo2[i];
   }
   return SumaArreglos;
