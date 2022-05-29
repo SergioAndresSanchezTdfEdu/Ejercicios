@@ -1,11 +1,11 @@
 document.getElementById("app").innerHTML = `
   <h1>Sumar Dos Arreglos</h1>
 `;
-
+//llamar a las variables y funciones con minusculas como primer palabra
 let Arreglo1: number[] = new Array(6);
 let Arreglo2: number[] = new Array(6);
 let SumaArreglo1y2: number[] = new Array(6);
-
+//seria mejor llamar a esta funcion cargarArreglo
 function LeerArreglo(
   Arreglo: number[],
   Tamanio: number,
@@ -13,6 +13,7 @@ function LeerArreglo(
 ): number[] {
   for (let i: number = 0; i < Tamanio; i++) {
     let NumeroLeido: number;
+    //definir variables fuera de ciclos
     NumeroLeido = Number(
       prompt(
         `Indique el número que desea incorporar en la posición ${i} del ${NombreArreglo}: `
@@ -21,6 +22,7 @@ function LeerArreglo(
     Arreglo[i] = NumeroLeido;
   }
   return Arreglo;
+    //los arreglos son globales no hace falta retornarlos
 }
 
 function SumarArreglo(
@@ -31,6 +33,7 @@ function SumarArreglo(
   let SumaArreglos: number[] = new Array(tamanio);
   for (let i: number = 0; i < tamanio; i++) {
     SumaArreglos[i] = arreglo1[i] + arreglo2[i];
+    //porque no usar el arreglo de suma ya definido al principio del script?
   }
   return SumaArreglos;
 }
@@ -65,3 +68,5 @@ MostrarArreglo(
   "arreglo de la suma de los Arreglos 1 y 2"
 );
 */
+//a veces no es bueno mostrar tanta informacion, console.log arreglo es suficiente y claro
+//El ejercicio esta bien resuelto
